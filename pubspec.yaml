@@ -1,0 +1,23 @@
+name: theme_service
+description: A new Flutter module project.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  get: ^4.6.5
+  local_storage_service:
+    git: https://github.com/niypoo/local_storage_service.git
+  bottom_sheet_helper:
+    git: https://github.com/niypoo/bottom_sheet_helper.git
+  fly_ui:
+    git: https://github.com/niypoo/fly_ui.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
