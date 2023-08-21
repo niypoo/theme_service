@@ -95,7 +95,6 @@ class ThemeService extends GetxService {
     if (currentTheme == null || currentTheme == 'Auto') {
       return getTheme('Light').theme;
     }
-    print('${getTheme('Light').name} $currentTheme');
     // return custom
     return getTheme(currentTheme).theme;
   }
