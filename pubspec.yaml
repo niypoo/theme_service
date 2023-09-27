@@ -16,7 +16,8 @@ dependencies:
     git: 
       url: git@github.com:niypoo/bottom_sheet_helper.git
   fly_ui:
-    git: https://github.com/niypoo/fly_ui.git
+    git:
+      url: git@github.com:niypoo/fly_ui.git
 
 dev_dependencies:
   flutter_test:
