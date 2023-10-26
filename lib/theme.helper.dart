@@ -154,7 +154,7 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w900,
-          fontSize: 20,
+          fontSize: 22,
         ),
       ),
     );
