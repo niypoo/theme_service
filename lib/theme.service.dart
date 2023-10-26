@@ -12,7 +12,7 @@ class ThemeService extends GetxService {
 
   // constructor
   ThemeService({
-    required this.themes,
+    this.themes = const [],
   });
 
   //current form settings table  // default is auto
@@ -24,6 +24,10 @@ class ThemeService extends GetxService {
         currentTheme = LocaleStorageService.to.instance.read('theme') ?? 'Auto';
 
     return this;
+  }
+
+  applyThemes(List<ThemeX> themes) {
+    themes.addAll(themes);
   }
 
   // get isDarkMode mode
