@@ -523,7 +523,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: bd066577b91a828379164890ad4d4a287e5c4425
+      resolved-ref: d4c989bfeacedad79bb66d207db977fd5f96c8e4
       url: "git@github.com:niypoo/responsive_helper.git"
     source: git
     version: "1.0.0+1"
