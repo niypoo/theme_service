@@ -12,7 +12,7 @@ class ThemeService extends GetxService {
 
   // constructor
   ThemeService({
-    this.themes = const [],
+    required this.themes,
   });
 
   //current form settings table  // default is auto

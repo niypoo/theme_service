@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:responsive_helper/extensions/responsive.extension.dart';
 
 class ThemeDataHelper {
   static ThemeData create(
@@ -38,27 +37,27 @@ class ThemeDataHelper {
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           textStyle: MaterialStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: 18.sp),
+            TextStyle(color: primaryColor, fontSize: 18),
           ),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
           textStyle: MaterialStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: 18.sp),
+            TextStyle(color: primaryColor, fontSize: 18),
           ),
         ),
       ),
       cupertinoOverrideTheme: CupertinoThemeData(
         textTheme: CupertinoTextThemeData(
           dateTimePickerTextStyle: TextStyle(
-            fontSize: 13.sp,
+            fontSize: 13,
             fontFamily: fontName,
             color: fontColor,
           ),
         ),
       ),
-      iconTheme: IconThemeData(color: iconColor, size: 16.sp),
+      iconTheme: IconThemeData(color: iconColor, size: 16),
       // textTheme: Get.textTheme.apply(
       //   fontFamily: fontName,
       //   bodyColor: fontColor,
@@ -69,73 +68,73 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w900,
-          fontSize: 22.sp,
+          fontSize: 22,
         ),
         headlineMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w900,
-          fontSize: 20.sp,
+          fontSize: 20,
         ),
         headlineSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w800,
-          fontSize: 18.sp,
+          fontSize: 18,
         ),
         titleLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w700,
-          fontSize: 16.sp,
+          fontSize: 16,
         ),
         titleMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w600,
-          fontSize: 14.sp,
+          fontSize: 14,
         ),
         titleSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w500,
-          fontSize: 12.sp,
+          fontSize: 12,
         ),
         bodyLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w300,
-          fontSize: 18.sp,
+          fontSize: 18,
         ),
         bodyMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w300,
-          fontSize: 16.sp,
+          fontSize: 16,
         ),
         bodySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w300,
-          fontSize: 14.sp,
+          fontSize: 14,
         ),
         labelLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w300,
-          fontSize: 14.sp,
+          fontSize: 14,
         ),
         labelMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w200,
-          fontSize: 12.sp,
+          fontSize: 12,
         ),
         labelSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w100,
-          fontSize: 10.sp,
+          fontSize: 10,
         ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -154,7 +153,7 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w900,
-          fontSize: 20.sp,
+          fontSize: 20,
         ),
       ),
     );
