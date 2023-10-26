@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 
 class ThemeDataHelper {
   static ThemeData create(
@@ -58,85 +59,85 @@ class ThemeDataHelper {
         ),
       ),
       iconTheme: IconThemeData(color: iconColor, size: iconSize),
-      // textTheme: Get.textTheme.apply(
-      //   fontFamily: fontName,
-      //   bodyColor: fontColor,
-      //   displayColor: fontColor,
-      // ),
-      textTheme: TextTheme(
-        headlineLarge: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w900,
-          fontSize: 22,
-        ),
-        headlineMedium: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w900,
-          fontSize: 20,
-        ),
-        headlineSmall: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w800,
-          fontSize: 18,
-        ),
-        titleLarge: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 16,
-        ),
-        titleMedium: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w600,
-          fontSize: 14,
-        ),
-        titleSmall: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w500,
-          fontSize: 12,
-        ),
-        bodyLarge: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 18,
-        ),
-        bodyMedium: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 16,
-        ),
-        bodySmall: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 14,
-        ),
-        labelLarge: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 14,
-        ),
-        labelMedium: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w200,
-          fontSize: 12,
-        ),
-        labelSmall: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w100,
-          fontSize: 10,
-        ),
+      textTheme: Get.textTheme.apply(
+        fontFamily: fontName,
+        bodyColor: fontColor,
+        displayColor: fontColor,
       ),
+      // textTheme: TextTheme(
+      //   headlineLarge: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w900,
+      //     fontSize: 22,
+      //   ),
+      //   headlineMedium: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w900,
+      //     fontSize: 20,
+      //   ),
+      //   headlineSmall: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w800,
+      //     fontSize: 18,
+      //   ),
+      //   titleLarge: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w700,
+      //     fontSize: 16,
+      //   ),
+      //   titleMedium: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w600,
+      //     fontSize: 14,
+      //   ),
+      //   titleSmall: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w500,
+      //     fontSize: 12,
+      //   ),
+      //   bodyLarge: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w300,
+      //     fontSize: 18,
+      //   ),
+      //   bodyMedium: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w300,
+      //     fontSize: 16,
+      //   ),
+      //   bodySmall: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w300,
+      //     fontSize: 14,
+      //   ),
+      //   labelLarge: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w300,
+      //     fontSize: 14,
+      //   ),
+      //   labelMedium: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w200,
+      //     fontSize: 12,
+      //   ),
+      //   labelSmall: TextStyle(
+      //     fontFamily: fontName,
+      //     color: fontColor,
+      //     fontWeight: FontWeight.w100,
+      //     fontSize: 10,
+      //   ),
+      // ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         elevation: 2,
         backgroundColor: cardColor,
