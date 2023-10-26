@@ -59,84 +59,10 @@ class ThemeDataHelper {
         ),
       ),
       iconTheme: IconThemeData(color: iconColor, size: iconSize),
-      // textTheme: Get.textTheme.apply(
-      //   fontFamily: fontName,
-      //   bodyColor: fontColor,
-      //   displayColor: fontColor,
-      // ),
-      textTheme: TextTheme(
-        headlineLarge: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 26,
-        ),
-        headlineMedium: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 24,
-        ),
-        headlineSmall: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 22,
-        ),
-        titleLarge: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 20,
-        ),
-        titleMedium: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w600,
-          fontSize: 18,
-        ),
-        titleSmall: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w500,
-          fontSize: 15,
-        ),
-        bodyLarge: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 18,
-        ),
-        bodyMedium: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 16,
-        ),
-        bodySmall: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 14,
-        ),
-        labelLarge: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 16,
-        ),
-        labelMedium: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w200,
-          fontSize: 14,
-        ),
-        labelSmall: TextStyle(
-          fontFamily: fontName,
-          color: fontColor,
-          fontWeight: FontWeight.w100,
-          fontSize: 12,
-        ),
+      textTheme: Get.textTheme.apply(
+        fontFamily: fontName,
+        bodyColor: fontColor,
+        displayColor: fontColor,
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         elevation: 2,
@@ -153,8 +79,8 @@ class ThemeDataHelper {
         titleTextStyle: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 26,
+          fontWeight: FontWeight.w900,
+          fontSize: 20,
         ),
       ),
     );
