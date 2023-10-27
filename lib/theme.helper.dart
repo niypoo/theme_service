@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 class ThemeDataHelper {
   static ThemeData create(
@@ -59,11 +59,11 @@ class ThemeDataHelper {
         ),
       ),
       iconTheme: IconThemeData(color: iconColor, size: iconSize),
-      textTheme: Get.textTheme.apply(
-        fontFamily: fontName,
-        bodyColor: fontColor,
-        displayColor: fontColor,
-      ),
+      // textTheme: Get.textTheme.apply(
+      //   fontFamily: fontName,
+      //   bodyColor: fontColor,
+      //   displayColor: fontColor,
+      // ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         elevation: 2,
         backgroundColor: cardColor,
