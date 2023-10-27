@@ -119,10 +119,10 @@ packages:
     dependency: transitive
     description:
       name: cloud_firestore
-      sha256: "7dd7e9505e4e895c87e7bc0c4cf49a2c0b0255fae900ab7fcac3c5daa9f422d5"
+      sha256: "666ae6914f5d9dde04d7fb49c5983d3bf7b887021a79a3ac17de2e95386b8006"
       url: "https://pub.dev"
     source: hosted
-    version: "4.12.0"
+    version: "4.12.1"
   cloud_firestore_platform_interface:
     dependency: transitive
     description:
@@ -287,7 +287,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: be9808d2091a6318a6dca1a09887a21392533b47
+      resolved-ref: "56b71cbee3f9beb056ebf02654c4c926a44e3c04"
       url: "git@github.com:niypoo/fly_ui.git"
     source: git
     version: "1.0.0+1"
@@ -523,7 +523,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: d4c989bfeacedad79bb66d207db977fd5f96c8e4
+      resolved-ref: d9c677cb13cd3ecabc451a0a49372c2cd939d404
       url: "git@github.com:niypoo/responsive_helper.git"
     source: git
     version: "1.0.0+1"
