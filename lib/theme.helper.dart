@@ -68,35 +68,35 @@ class ThemeDataHelper {
         headlineLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w900,
           fontSize: 30,
         ),
         //
         headlineMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w800,
           fontSize: 28,
         ),
         //
         headlineSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w300,
+          fontWeight: FontWeight.w700,
           fontSize: 26,
         ),
         //
         titleLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w500,
           fontSize: 22,
         ),
         //
         titleMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w400,
           fontSize: 20,
         ),
         //
@@ -106,6 +106,7 @@ class ThemeDataHelper {
           fontWeight: FontWeight.w300,
           fontSize: 18,
         ),
+
         //
         bodyLarge: TextStyle(
           fontFamily: fontName,
@@ -134,7 +135,7 @@ class ThemeDataHelper {
         labelLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w500,
           fontSize: 18,
         ),
 
@@ -142,7 +143,7 @@ class ThemeDataHelper {
         labelMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w400,
           fontSize: 16,
         ),
 
@@ -150,7 +151,7 @@ class ThemeDataHelper {
         labelSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w100,
+          fontWeight: FontWeight.w200,
           fontSize: 14,
         ),
       ),
