@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-// import 'package:get/get.dart';
 
 class ThemeDataHelper {
   static ThemeData create(
@@ -64,6 +63,97 @@ class ThemeDataHelper {
       //   bodyColor: fontColor,
       //   displayColor: fontColor,
       // ),
+      textTheme: TextTheme(
+        //
+        headlineLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.bold,
+          fontSize: 30,
+        ),
+        //
+        headlineMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w500,
+          fontSize: 28,
+        ),
+        //
+        headlineSmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w300,
+          fontSize: 26,
+        ),
+        //
+        titleLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.bold,
+          fontSize: 22,
+        ),
+        //
+        titleMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w500,
+          fontSize: 20,
+        ),
+        //
+        titleSmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w300,
+          fontSize: 18,
+        ),
+        //
+        bodyLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w300,
+          fontSize: 20,
+        ),
+
+        //
+        bodyMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w300,
+          fontSize: 16,
+        ),
+
+        //
+        bodySmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w300,
+          fontSize: 14,
+        ),
+
+        //
+        labelLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.bold,
+          fontSize: 18,
+        ),
+
+        //
+        labelMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w500,
+          fontSize: 16,
+        ),
+
+        //
+        labelSmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w100,
+          fontSize: 14,
+        ),
+      ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         elevation: 2,
         backgroundColor: cardColor,
@@ -79,8 +169,8 @@ class ThemeDataHelper {
         titleTextStyle: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w900,
-          fontSize: 20,
+          fontWeight: FontWeight.bold,
+          fontSize: 30,
         ),
       ),
     );
