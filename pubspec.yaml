@@ -19,9 +19,6 @@ dependencies:
   fly_ui:
     git:
       url: git@github.com:niypoo/fly_ui.git
-  responsive_helper:
-    git:
-      url: git@github.com:niypoo/responsive_helper.git
 
 dev_dependencies:
   flutter_test:

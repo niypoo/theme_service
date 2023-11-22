@@ -17,7 +17,7 @@ class ThemeDataHelper {
     Color? iconColor,
     Color? secondaryIconColor,
     String? fontName,
-    double iconSize = 25,
+    double? iconSize ,
     Brightness? brightness,
   }) {
     return theme.copyWith(
@@ -166,7 +166,10 @@ class ThemeDataHelper {
         systemOverlayStyle:
             SystemUiOverlayStyle(statusBarBrightness: brightness),
         color: appBarColor,
-        iconTheme: IconThemeData(color: iconColor, size: iconSize),
+        iconTheme: IconThemeData(
+          color: iconColor,
+          size: iconSize,
+        ),
         actionsIconTheme: IconThemeData(color: iconColor),
         titleTextStyle: TextStyle(
           fontFamily: fontName,
