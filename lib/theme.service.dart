@@ -84,8 +84,12 @@ class ThemeService extends GetxService {
     Get.forceAppUpdate();
   }
 
-  setAndroidBarsColors() {
+  Future<void> setAndroidBarsColors() async {
     if (Platform.isAndroid) {
+
+      // avoid missing change
+      await Future.delayed(const Duration(milliseconds: 300));
+
       SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         systemNavigationBarColor: getCustomTheme.scaffoldBackgroundColor,
         statusBarColor: getCustomTheme.scaffoldBackgroundColor,
@@ -94,7 +98,6 @@ class ThemeService extends GetxService {
         systemNavigationBarIconBrightness:
             isDark ? Brightness.light : Brightness.dark,
         statusBarBrightness: isDark ? Brightness.dark : Brightness.light,
-        
       ));
     }
   }
