@@ -82,7 +82,12 @@ class ThemeService extends GetxService {
 
       // set the style with change color of bars to scaffold
       SystemChrome.setSystemUIOverlayStyle(
-        style,
+        style.copyWith(
+          // systemNavigationBarColor: getCustomTheme!.scaffoldBackgroundColor,
+          statusBarColor: getCustomTheme!.scaffoldBackgroundColor,
+          // systemNavigationBarIconBrightness:
+          //     isDark ? Brightness.light : Brightness.dark,
+        ),
       );
     }
   }
