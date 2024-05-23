@@ -89,8 +89,6 @@ class ThemeService extends GetxService {
       SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         systemNavigationBarColor: getCustomTheme.scaffoldBackgroundColor,
         statusBarColor: getCustomTheme.scaffoldBackgroundColor,
-        systemStatusBarContrastEnforced: true,
-        systemNavigationBarContrastEnforced: true,
         systemNavigationBarDividerColor: getCustomTheme.cardColor,
         statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
         systemNavigationBarIconBrightness:
