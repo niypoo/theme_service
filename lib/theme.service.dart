@@ -95,8 +95,9 @@ class ThemeService extends GetxService {
         style.copyWith(
           systemNavigationBarColor: getCustomTheme.scaffoldBackgroundColor,
           statusBarColor: getCustomTheme.scaffoldBackgroundColor,
+          statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
           systemNavigationBarIconBrightness:
-              isDark ? Brightness.dark : Brightness.light,
+              isDark ? Brightness.light : Brightness.dark,
         ),
       );
     }
