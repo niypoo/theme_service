@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:local_storage_service/localStorage.service.dart';
@@ -23,6 +26,8 @@ class ThemeService extends GetxService {
     currentTheme =
         currentTheme = LocaleStorageService.to.instance.read('theme') ?? 'Auto';
 
+    // Android change navigation and status bar color
+    setAndroidBarsColors();
     return this;
   }
 
@@ -66,5 +71,22 @@ class ThemeService extends GetxService {
     // this delay fix card and some element have not color changes
     await Future.delayed(const Duration(milliseconds: 300));
     Get.forceAppUpdate();
+  }
+
+  setAndroidBarsColors() {
+    if (Platform.isAndroid) {
+      // define style depend on current theme
+      final SystemUiOverlayStyle style = currentTheme == 'Dark'
+          ? SystemUiOverlayStyle.dark
+          : SystemUiOverlayStyle.light;
+
+      // set the style with change color of bars to scaffold
+      SystemChrome.setSystemUIOverlayStyle(
+        style.copyWith(
+          systemNavigationBarColor: getCustomTheme!.scaffoldBackgroundColor,
+          statusBarColor: getCustomTheme!.scaffoldBackgroundColor,
+        ),
+      );
+    }
   }
 }

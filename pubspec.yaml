@@ -9,7 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  get: ^4.6.5
+  get: ^4.6.6
   local_storage_service:
     git: 
       url: git@github.com:niypoo/local_storage_service.git
