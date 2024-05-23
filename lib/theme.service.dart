@@ -86,16 +86,11 @@ class ThemeService extends GetxService {
 
   setAndroidBarsColors() {
     if (Platform.isAndroid) {
-      SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-        systemNavigationBarColor: getCustomTheme.cardColor,
-        statusBarColor: getCustomTheme.cardColor,
-        systemNavigationBarDividerColor: getCustomTheme.cardColor,
-        statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
-        systemNavigationBarIconBrightness:
-            isDark ? Brightness.light : Brightness.dark,
-        statusBarBrightness: isDark ? Brightness.dark : Brightness.light,
-        
-      ));
+      // define style depend on current theme
+      final SystemUiOverlayStyle style =
+          isDark ? SystemUiOverlayStyle.light : SystemUiOverlayStyle.dark;
+
+      SystemChrome.setSystemUIOverlayStyle(style);
     }
   }
 }
