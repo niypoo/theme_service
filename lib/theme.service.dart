@@ -75,20 +75,14 @@ class ThemeService extends GetxService {
 
   setAndroidBarsColors() {
     if (Platform.isAndroid) {
-      print('<<<<<<isDark>>>>>> #${isDark}');
-      print('${Get.isDarkMode} --- ${ Get.isPlatformDarkMode} --- ${ currentTheme == 'Dark'}');
+
       // define style depend on current theme
       final SystemUiOverlayStyle style =
           isDark ? SystemUiOverlayStyle.dark : SystemUiOverlayStyle.light;
 
       // set the style with change color of bars to scaffold
       SystemChrome.setSystemUIOverlayStyle(
-        style.copyWith(
-          systemNavigationBarColor: getCustomTheme!.scaffoldBackgroundColor,
-          statusBarColor: getCustomTheme!.scaffoldBackgroundColor,
-          systemNavigationBarIconBrightness:
-              isDark ? Brightness.light : Brightness.dark,
-        ),
+        style,
       );
     }
   }
