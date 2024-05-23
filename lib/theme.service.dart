@@ -92,9 +92,11 @@ class ThemeService extends GetxService {
         systemStatusBarContrastEnforced: true,
         systemNavigationBarContrastEnforced: true,
         systemNavigationBarDividerColor: getCustomTheme.cardColor,
-        statusBarIconBrightness: isDark ? Brightness.dark : Brightness.light,
+        statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
         systemNavigationBarIconBrightness:
-            isDark ? Brightness.dark : Brightness.light,
+            isDark ? Brightness.light : Brightness.dark,
+        statusBarBrightness: isDark ? Brightness.dark : Brightness.light,
+        
       ));
     }
   }
