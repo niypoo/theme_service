@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class ThemeX {
-  String? name;
-  ThemeData? theme;
+  String name;
+  ThemeData theme;
 
   ThemeX({
-    this.name,
-    this.theme,
+    required this.name,
+    required this.theme,
   });
 }
