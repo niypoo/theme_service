@@ -77,7 +77,7 @@ class ThemeService extends GetxService {
     if (Platform.isAndroid) {
       // define style depend on current theme
       final SystemUiOverlayStyle style =
-          isDark ? SystemUiOverlayStyle.dark : SystemUiOverlayStyle.dark;
+          isDark ? SystemUiOverlayStyle.dark : SystemUiOverlayStyle.light;
 
       // set the style with change color of bars to scaffold
       SystemChrome.setSystemUIOverlayStyle(
