@@ -1,4 +1,6 @@
 import 'dart:io';
+
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:local_storage_service/localStorage.service.dart';
@@ -84,16 +86,16 @@ class ThemeService extends GetxService {
 
   setAndroidBarsColors() {
     if (Platform.isAndroid) {
-      // SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      //   systemNavigationBarColor: getCustomTheme.scaffoldBackgroundColor,
-      //   statusBarColor: getCustomTheme.scaffoldBackgroundColor,
-      //   systemNavigationBarDividerColor: getCustomTheme.cardColor,
-      //   statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
-      //   systemNavigationBarIconBrightness:
-      //       isDark ? Brightness.light : Brightness.dark,
-      //   statusBarBrightness: isDark ? Brightness.dark : Brightness.light,
+      SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+        systemNavigationBarColor: getCustomTheme.cardColor,
+        statusBarColor: getCustomTheme.cardColor,
+        systemNavigationBarDividerColor: getCustomTheme.cardColor,
+        statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
+        systemNavigationBarIconBrightness:
+            isDark ? Brightness.light : Brightness.dark,
+        statusBarBrightness: isDark ? Brightness.dark : Brightness.light,
         
-      // ));
+      ));
     }
   }
 }
