@@ -20,8 +20,9 @@ class ThemeService extends GetxService {
       LocaleStorageService.to.instance.read('theme') ?? 'Auto';
 
   // get isDarkMode mode
-  bool get isDark =>
-      Get.isDarkMode || Get.isPlatformDarkMode || currentTheme == 'Dark';
+  bool get isDark => (currentTheme == null || currentTheme == 'Auto')
+      ? Get.isDarkMode || Get.isPlatformDarkMode
+      : currentTheme == 'Dark';
 
   ///return light them if user set auto/light or dark if user set them as dark
   ThemeData? get getLightTheme => lightTheme;
@@ -74,14 +75,11 @@ class ThemeService extends GetxService {
     // set theme name
     currentTheme = themeName;
 
-    // get theme
-    ThemeData theme = getCustomTheme;
-
     // store theme name
     await LocaleStorageService.to.instance.write('theme', themeName);
 
     // change theme
-    Get.changeTheme(theme);
+    Get.changeTheme(getCustomTheme);
 
     // this delay fix card and some element have not color changes
     await Future.delayed(const Duration(milliseconds: 300));
