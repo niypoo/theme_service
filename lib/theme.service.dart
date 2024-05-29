@@ -21,7 +21,7 @@ class ThemeService extends GetxService {
 
   // get isDarkMode mode
   bool get isDark => (currentTheme == null || currentTheme == 'Auto')
-      ? Get.isDarkMode || Get.isPlatformDarkMode
+      ? (Get.isDarkMode || Get.isPlatformDarkMode)
       : currentTheme == 'Dark';
 
   ///return light them if user set auto/light or dark if user set them as dark
@@ -46,20 +46,15 @@ class ThemeService extends GetxService {
   // return custom them as user choose
   // this get use it only if there is ability in app that
   // make user change theme like from setting
-  ThemeData get getCustomTheme {
-    print('currentTheme $currentTheme');
+  ThemeData get getActiveTheme {
     // if current null return light as default
-    if (currentTheme == null || currentTheme == 'Auto') {
-      print('1 $currentTheme');
+    if ((currentTheme == null || currentTheme == 'Auto')) {
       return isDark ? darkTheme : lightTheme;
     } else if (currentTheme == 'Dark') {
-      print('2 $currentTheme');
       return darkTheme;
     } else if (currentTheme == 'Light') {
-      print('3 $currentTheme');
       return lightTheme;
     } else {
-      print('4 $currentTheme');
       // return custom
       return getExtraTheme(currentTheme).theme;
     }
@@ -79,7 +74,7 @@ class ThemeService extends GetxService {
     await LocaleStorageService.to.instance.write('theme', themeName);
 
     // change theme
-    Get.changeTheme(getCustomTheme);
+    Get.changeTheme(getActiveTheme);
 
     // this delay fix card and some element have not color changes
     await Future.delayed(const Duration(milliseconds: 300));
@@ -93,9 +88,9 @@ class ThemeService extends GetxService {
       await Future.delayed(const Duration(milliseconds: 300));
 
       SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-        systemNavigationBarColor: getCustomTheme.scaffoldBackgroundColor,
-        statusBarColor: getCustomTheme.scaffoldBackgroundColor,
-        systemNavigationBarDividerColor: getCustomTheme.cardColor,
+        systemNavigationBarColor: getActiveTheme.scaffoldBackgroundColor,
+        statusBarColor: getActiveTheme.scaffoldBackgroundColor,
+        systemNavigationBarDividerColor: getActiveTheme.cardColor,
         statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
         systemNavigationBarIconBrightness:
             isDark ? Brightness.light : Brightness.dark,
