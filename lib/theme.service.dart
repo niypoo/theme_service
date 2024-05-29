@@ -46,16 +46,21 @@ class ThemeService extends GetxService {
   // this get use it only if there is ability in app that
   // make user change theme like from setting
   ThemeData get getCustomTheme {
+    print('currentTheme $currentTheme');
     // if current null return light as default
     if (currentTheme == null || currentTheme == 'Auto') {
+      print('1 $currentTheme');
       return isDark ? darkTheme : lightTheme;
     } else if (currentTheme == 'Dark') {
+      print('2 $currentTheme');
       return darkTheme;
     } else if (currentTheme == 'Light') {
+      print('3 $currentTheme');
       return lightTheme;
     } else {
+      print('4 $currentTheme');
       // return custom
-      return getExtraTheme('currentTheme').theme;
+      return getExtraTheme(currentTheme).theme;
     }
   }
 
@@ -72,11 +77,11 @@ class ThemeService extends GetxService {
     // get theme
     ThemeData theme = getCustomTheme;
 
-    // change theme
-    Get.changeTheme(theme);
-
     // store theme name
     await LocaleStorageService.to.instance.write('theme', themeName);
+
+    // change theme
+    Get.changeTheme(theme);
 
     // this delay fix card and some element have not color changes
     await Future.delayed(const Duration(milliseconds: 300));
@@ -86,7 +91,6 @@ class ThemeService extends GetxService {
 
   Future<void> setAndroidBarsColors() async {
     if (Platform.isAndroid) {
-
       // avoid missing change
       await Future.delayed(const Duration(milliseconds: 300));
 
