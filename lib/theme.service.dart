@@ -75,7 +75,7 @@ class ThemeService extends GetxService {
 
     // change theme
     Get.changeTheme(getActiveTheme);
-
+Get.forceAppUpdate();
     // this delay fix card and some element have not color changes
     await Future.delayed(const Duration(milliseconds: 500));
     setAndroidBarsColors();
