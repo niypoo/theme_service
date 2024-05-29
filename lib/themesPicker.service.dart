@@ -10,11 +10,11 @@ class ThemesPickerService {
         options: [
           ActionSheetOption(
             title: 'Light'.tr,
-            value: ThemeService.to.lightTheme,
+            value: 'Light',
           ),
           ActionSheetOption(
             title: 'Dark'.tr,
-            value: ThemeService.to.darkTheme,
+            value: 'Dark',
           ),
           if (ThemeService.to.extraThemes.isNotEmpty)
             ...ThemeService.to.extraThemes
