@@ -21,7 +21,7 @@ class ThemeService extends GetxService {
 
   // get isDarkMode mode
   bool get isDark => (currentTheme == null || currentTheme == 'Auto')
-      ? (Get.isDarkMode || Get.isPlatformDarkMode)
+      ? Get.isPlatformDarkMode
       : currentTheme == 'Dark';
 
   ///return light them if user set auto/light or dark if user set them as dark
