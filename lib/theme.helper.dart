@@ -71,7 +71,7 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w100,
-          fontSize:  40.sp,
+          fontSize:  42.sp,
         ),
         displayMedium: TextStyle(
           fontFamily: fontName,
@@ -110,20 +110,20 @@ class ThemeDataHelper {
         titleLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 24.sp,
+          fontWeight: FontWeight.w600,
+          fontSize: 21.sp,
         ),
         titleMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w500,
-          fontSize: 21.sp,
+          fontSize: 19.sp,
         ),
         titleSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w500,
-          fontSize: 18.sp,
+          fontSize: 17.sp,
         ),
 
         // BODY
@@ -131,32 +131,32 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w400,
-          fontSize: 17.sp,
+          fontSize: 14.sp,
         ),
         bodyMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 15.sp,
+          fontWeight: FontWeight.w300,
+          fontSize: 13.sp,
         ),
         bodySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 13.sp,
+          fontWeight: FontWeight.w300,
+          fontSize: 12.sp,
         ),
 
         // LABEL
         labelLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w400,
           fontSize: 12.sp,
         ),
         labelMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.w300,
           fontSize: 11.sp,
         ),
         labelSmall: TextStyle(
