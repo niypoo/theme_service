@@ -129,20 +129,20 @@ class ThemeDataHelper {
         bodyLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 14.sp,
+          fontWeight: FontWeight.w500,
+          fontSize: 12.sp,
         ),
         bodyMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 13.sp,
+          fontWeight: FontWeight.w500,
+          fontSize: 11.sp,
         ),
         bodySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 12.sp,
+          fontWeight: FontWeight.w500,
+          fontSize: 10.sp,
         ),
 
         // LABEL
@@ -150,19 +150,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w400,
-          fontSize: 12.sp,
+          fontSize: 9.sp,
         ),
         labelMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 11.sp,
+          fontWeight: FontWeight.w400,
+          fontSize: 8.sp,
         ),
         labelSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 9.sp,
+          fontWeight: FontWeight.w400,
+          fontSize: 7.sp,
         ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
