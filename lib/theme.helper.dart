@@ -90,19 +90,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w700,
-          fontSize: 26.sp,
+          fontSize: 23.sp,
         ),
         headlineMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w600,
-          fontSize: 20.sp,
+          fontSize: 19.sp,
         ),
         headlineSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w600,
-          fontSize: 15.sp,
+          fontSize: 17.sp,
         ),
 
         // TITLE
@@ -110,19 +110,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w600,
-          fontSize: 21.sp,
+          fontSize: 18.sp,
         ),
         titleMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w500,
-          fontSize: 19.sp,
+          fontSize: 15.sp,
         ),
         titleSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w500,
-          fontSize: 17.sp,
+          fontSize: 13.sp,
         ),
 
         // BODY
