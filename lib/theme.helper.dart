@@ -76,13 +76,13 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w100,
-          fontSize: 38.sp,
+          fontSize: 36.sp,
         ),
         displaySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w100,
-          fontSize: 34.sp,
+          fontSize: 33.sp,
         ),
 
         // HEADLINE
