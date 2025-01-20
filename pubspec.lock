@@ -449,11 +449,10 @@ packages:
   patata_responsive:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "44e22dc9655984690896ce5908afe3f25a37a3be"
-      url: "git@github.com:niypoo/patata_responsive.git"
-    source: git
+      name: patata_responsive
+      sha256: "56218861326b4df3e6cc44a346aa3d5b36f2c62c0c64bbccc76099dba71d51c1"
+      url: "https://pub.dev"
+    source: hosted
     version: "0.0.1"
   path:
     dependency: transitive

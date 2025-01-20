@@ -10,15 +10,13 @@ dependencies:
     sdk: flutter
 
   get: ^4.6.6
+  patata_responsive: ^0.0.1
   local_storage_service:
     git: 
       url: git@github.com:niypoo/local_storage_service.git
   bottom_sheet_helper:
     git: 
       url: git@github.com:niypoo/bottom_sheet_helper.git
-  patata_responsive:
-    git: 
-      url: git@github.com:niypoo/patata_responsive.git
 
 dev_dependencies:
   flutter_test:
