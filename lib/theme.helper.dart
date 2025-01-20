@@ -58,8 +58,7 @@ class ThemeDataHelper {
           ),
         ),
       ),
-      iconTheme: IconThemeData(
-          color: iconColor, size: (iconSize ?? 16).sp),
+      iconTheme: IconThemeData(color: iconColor, size: (iconSize ?? 16).sp),
       // textTheme: Get.textTheme.apply(
       //   fontFamily: fontName,
       //   bodyColor: fontColor,
@@ -71,7 +70,7 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w100,
-          fontSize:  42.sp,
+          fontSize: 42.sp,
         ),
         displayMedium: TextStyle(
           fontFamily: fontName,
