@@ -291,7 +291,7 @@ packages:
     source: hosted
     version: "3.2.0"
   fly_ui:
-    dependency: "direct main"
+    dependency: transitive
     description:
       path: "."
       ref: HEAD
@@ -446,6 +446,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
+  patata_responsive:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "44e22dc9655984690896ce5908afe3f25a37a3be"
+      url: "git@github.com:niypoo/patata_responsive.git"
+    source: git
+    version: "0.0.1"
   path:
     dependency: transitive
     description:

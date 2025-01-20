@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:patata_responsive/patata_responsive.dart';
 
 class ThemeDataHelper {
   static ThemeData create(
-    ThemeData theme,
-    double scalablePixel, {
+    ThemeData theme, {
     Color? fontColor,
     Color? secondaryTextColor,
     Color? primaryColor,
@@ -38,28 +38,28 @@ class ThemeDataHelper {
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           textStyle: WidgetStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: (12 * scalablePixel)),
+            TextStyle(color: primaryColor, fontSize: (12.sp)),
           ),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
           textStyle: WidgetStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: (12 * scalablePixel)),
+            TextStyle(color: primaryColor, fontSize: (12.sp)),
           ),
         ),
       ),
       cupertinoOverrideTheme: CupertinoThemeData(
         textTheme: CupertinoTextThemeData(
           dateTimePickerTextStyle: TextStyle(
-            fontSize: 18 * scalablePixel,
+            fontSize: 18.sp,
             fontFamily: fontName,
             color: fontColor,
           ),
         ),
       ),
       iconTheme: IconThemeData(
-          color: iconColor, size: (iconSize ?? 16) * scalablePixel),
+          color: iconColor, size: (iconSize ?? 16).sp),
       // textTheme: Get.textTheme.apply(
       //   fontFamily: fontName,
       //   bodyColor: fontColor,
@@ -71,19 +71,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w100,
-          fontSize: scalablePixel * 40,
+          fontSize:  40.sp,
         ),
         displayMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w100,
-          fontSize: scalablePixel * 38,
+          fontSize: 38.sp,
         ),
         displaySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w100,
-          fontSize: scalablePixel * 34,
+          fontSize: 34.sp,
         ),
 
         // HEADLINE
@@ -91,19 +91,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w700,
-          fontSize: scalablePixel * 26,
+          fontSize: 26.sp,
         ),
         headlineMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w600,
-          fontSize: scalablePixel * 20,
+          fontSize: 20.sp,
         ),
         headlineSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w600,
-          fontSize: scalablePixel * 15,
+          fontSize: 15.sp,
         ),
 
         // TITLE
@@ -111,19 +111,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w700,
-          fontSize: scalablePixel * 24,
+          fontSize: 24.sp,
         ),
         titleMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w500,
-          fontSize: scalablePixel * 21,
+          fontSize: 21.sp,
         ),
         titleSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w500,
-          fontSize: scalablePixel * 18,
+          fontSize: 18.sp,
         ),
 
         // BODY
@@ -131,19 +131,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w400,
-          fontSize: scalablePixel * 17,
+          fontSize: 17.sp,
         ),
         bodyMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w400,
-          fontSize: scalablePixel * 15,
+          fontSize: 15.sp,
         ),
         bodySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w400,
-          fontSize: scalablePixel * 13,
+          fontSize: 13.sp,
         ),
 
         // LABEL
@@ -151,19 +151,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w500,
-          fontSize: scalablePixel * 12,
+          fontSize: 12.sp,
         ),
         labelMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w400,
-          fontSize: scalablePixel * 11,
+          fontSize: 11.sp,
         ),
         labelSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w300,
-          fontSize: scalablePixel * 9,
+          fontSize: 9.sp,
         ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -178,14 +178,14 @@ class ThemeDataHelper {
         color: appBarColor,
         iconTheme: IconThemeData(
           color: iconColor,
-          size: 18 * scalablePixel,
+          size: 18.sp,
         ),
         actionsIconTheme: IconThemeData(color: iconColor),
         titleTextStyle: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.bold,
-          fontSize: (iconSize ?? 16) * scalablePixel,
+          fontSize: (iconSize ?? 16).sp,
         ),
       ),
     );

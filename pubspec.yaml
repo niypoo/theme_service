@@ -16,9 +16,9 @@ dependencies:
   bottom_sheet_helper:
     git: 
       url: git@github.com:niypoo/bottom_sheet_helper.git
-  fly_ui:
-    git:
-      url: git@github.com:niypoo/fly_ui.git
+  patata_responsive:
+    git: 
+      url: git@github.com:niypoo/patata_responsive.git
 
 dev_dependencies:
   flutter_test:
