@@ -64,107 +64,107 @@ class ThemeDataHelper {
       //   bodyColor: fontColor,
       //   displayColor: fontColor,
       // ),
-      // textTheme: TextTheme(
-      //   // display
-      //   displayLarge: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w100,
-      //     fontSize: 42.sp,
-      //   ),
-      //   displayMedium: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w100,
-      //     fontSize: 36.sp,
-      //   ),
-      //   displaySmall: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w100,
-      //     fontSize: 33.sp,
-      //   ),
+      textTheme: TextTheme(
+        // display
+        displayLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w200,
+          fontSize: 42.sp,
+        ),
+        displayMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w100,
+          fontSize: 36.sp,
+        ),
+        displaySmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w100,
+          fontSize: 33.sp,
+        ),
 
-      //   // HEADLINE
-      //   headlineLarge: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w700,
-      //     fontSize: 24.sp,
-      //   ),
-      //   headlineMedium: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w700,
-      //     fontSize: 20.sp,
-      //   ),
-      //   headlineSmall: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w700,
-      //     fontSize: 17.sp,
-      //   ),
+        // HEADLINE
+        headlineLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w800,
+          fontSize: 24.sp,
+        ),
+        headlineMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w700,
+          fontSize: 20.sp,
+        ),
+        headlineSmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w700,
+          fontSize: 17.sp,
+        ),
 
-      //   // TITLE
-      //   titleLarge: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w600,
-      //     fontSize: 16.sp,
-      //   ),
-      //   titleMedium: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w600,
-      //     fontSize: 14.sp,
-      //   ),
-      //   titleSmall: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w600,
-      //     fontSize: 12.sp,
-      //   ),
+        // TITLE
+        titleLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w700,
+          fontSize: 16.sp,
+        ),
+        titleMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w600,
+          fontSize: 14.sp,
+        ),
+        titleSmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w600,
+          fontSize: 12.sp,
+        ),
 
-      //   // BODY
-      //   bodyLarge: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w500,
-      //     fontSize: 11.sp,
-      //   ),
-      //   bodyMedium: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w500,
-      //     fontSize: 10.sp,
-      //   ),
-      //   bodySmall: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w500,
-      //     fontSize: 9.sp,
-      //   ),
+        // BODY
+        bodyLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w600,
+          fontSize: 11.sp,
+        ),
+        bodyMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w500,
+          fontSize: 10.sp,
+        ),
+        bodySmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w500,
+          fontSize: 9.sp,
+        ),
 
-      //   // LABEL
-      //   labelLarge: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w400,
-      //     fontSize: 8.sp,
-      //   ),
-      //   labelMedium: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w400,
-      //     fontSize: 7.sp,
-      //   ),
-      //   labelSmall: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w400,
-      //     fontSize: 6.sp,
-      //   ),
-      // ),
+        // LABEL
+        labelLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w500,
+          fontSize: 8.sp,
+        ),
+        labelMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w400,
+          fontSize: 7.sp,
+        ),
+        labelSmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w400,
+          fontSize: 6.sp,
+        ),
+      ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         elevation: 2,
         backgroundColor: cardColor,
