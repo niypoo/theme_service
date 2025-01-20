@@ -11,6 +11,7 @@ dependencies:
 
   get: ^4.6.6
   patata_responsive: ^0.0.1
+  
   local_storage_service:
     git: 
       url: git@github.com:niypoo/local_storage_service.git
