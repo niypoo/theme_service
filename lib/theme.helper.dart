@@ -90,7 +90,7 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w700,
-          fontSize: 22.sp,
+          fontSize: 24.sp,
         ),
         headlineMedium: TextStyle(
           fontFamily: fontName,
@@ -102,7 +102,7 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w700,
-          fontSize: 18.sp,
+          fontSize: 17.sp,
         ),
 
         // TITLE
