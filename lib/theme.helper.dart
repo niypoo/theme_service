@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
 
 class ThemeDataHelper {
   static ThemeData create(
-    ThemeData theme, {
+    ThemeData theme,
+    double scalablePixel, {
     Color? fontColor,
     Color? secondaryTextColor,
     Color? primaryColor,
@@ -17,7 +17,7 @@ class ThemeDataHelper {
     Color? iconColor,
     Color? secondaryIconColor,
     String? fontName,
-    double? iconSize ,
+    double? iconSize,
     Brightness? brightness,
   }) {
     return theme.copyWith(
@@ -37,125 +37,135 @@ class ThemeDataHelper {
       ),
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
-          textStyle: MaterialStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: 18),
+          textStyle: WidgetStateProperty.all(
+            TextStyle(color: primaryColor, fontSize: (12 * scalablePixel)),
           ),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
-          textStyle: MaterialStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: 18),
+          textStyle: WidgetStateProperty.all(
+            TextStyle(color: primaryColor, fontSize: (12 * scalablePixel)),
           ),
         ),
       ),
       cupertinoOverrideTheme: CupertinoThemeData(
         textTheme: CupertinoTextThemeData(
           dateTimePickerTextStyle: TextStyle(
-            fontSize: 18,
+            fontSize: 18 * scalablePixel,
             fontFamily: fontName,
             color: fontColor,
           ),
         ),
       ),
-      iconTheme: IconThemeData(color: iconColor, size: iconSize),
-      textTheme: Get.textTheme.apply(
-        fontFamily: fontName,
-        bodyColor: fontColor,
-        displayColor: fontColor,
-      ),
-      // textTheme: TextTheme(
-      //   //
-      //   headlineLarge: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w900,
-      //     fontSize: 30,
-      //   ),
-      //   //
-      //   headlineMedium: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w800,
-      //     fontSize: 28,
-      //   ),
-      //   //
-      //   headlineSmall: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w700,
-      //     fontSize: 26,
-      //   ),
-      //   //
-      //   titleLarge: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w500,
-      //     fontSize: 22,
-      //   ),
-      //   //
-      //   titleMedium: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w400,
-      //     fontSize: 20,
-      //   ),
-      //   //
-      //   titleSmall: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w300,
-      //     fontSize: 18,
-      //   ),
-
-      //   //
-      //   bodyLarge: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w300,
-      //     fontSize: 20,
-      //   ),
-
-      //   //
-      //   bodyMedium: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w300,
-      //     fontSize: 16,
-      //   ),
-
-      //   //
-      //   bodySmall: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w300,
-      //     fontSize: 14,
-      //   ),
-
-      //   //
-      //   labelLarge: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w500,
-      //     fontSize: 18,
-      //   ),
-
-      //   //
-      //   labelMedium: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w400,
-      //     fontSize: 16,
-      //   ),
-
-      //   //
-      //   labelSmall: TextStyle(
-      //     fontFamily: fontName,
-      //     color: fontColor,
-      //     fontWeight: FontWeight.w200,
-      //     fontSize: 14,
-      //   ),
+      iconTheme: IconThemeData(
+          color: iconColor, size: (iconSize ?? 16) * scalablePixel),
+      // textTheme: Get.textTheme.apply(
+      //   fontFamily: fontName,
+      //   bodyColor: fontColor,
+      //   displayColor: fontColor,
       // ),
+      textTheme: TextTheme(
+        // display
+        displayLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w100,
+          fontSize: scalablePixel * 40,
+        ),
+        displayMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w100,
+          fontSize: scalablePixel * 38,
+        ),
+        displaySmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w100,
+          fontSize: scalablePixel * 34,
+        ),
+
+        // HEADLINE
+        headlineLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w700,
+          fontSize: scalablePixel * 26,
+        ),
+        headlineMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w600,
+          fontSize: scalablePixel * 20,
+        ),
+        headlineSmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w600,
+          fontSize: scalablePixel * 15,
+        ),
+
+        // TITLE
+        titleLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w700,
+          fontSize: scalablePixel * 24,
+        ),
+        titleMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w500,
+          fontSize: scalablePixel * 21,
+        ),
+        titleSmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w500,
+          fontSize: scalablePixel * 18,
+        ),
+
+        // BODY
+        bodyLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w400,
+          fontSize: scalablePixel * 17,
+        ),
+        bodyMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w400,
+          fontSize: scalablePixel * 15,
+        ),
+        bodySmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w400,
+          fontSize: scalablePixel * 13,
+        ),
+
+        // LABEL
+        labelLarge: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w500,
+          fontSize: scalablePixel * 12,
+        ),
+        labelMedium: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w400,
+          fontSize: scalablePixel * 11,
+        ),
+        labelSmall: TextStyle(
+          fontFamily: fontName,
+          color: fontColor,
+          fontWeight: FontWeight.w300,
+          fontSize: scalablePixel * 9,
+        ),
+      ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         elevation: 2,
         backgroundColor: cardColor,
@@ -168,14 +178,14 @@ class ThemeDataHelper {
         color: appBarColor,
         iconTheme: IconThemeData(
           color: iconColor,
-          size: iconSize,
+          size: 18 * scalablePixel,
         ),
         actionsIconTheme: IconThemeData(color: iconColor),
         titleTextStyle: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.bold,
-          fontSize: 30,
+          fontSize: (iconSize ?? 16) * scalablePixel,
         ),
       ),
     );
