@@ -121,7 +121,7 @@ class ThemeDataHelper {
         titleSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w500,
           fontSize: 12.sp,
         ),
 
@@ -129,20 +129,20 @@ class ThemeDataHelper {
         bodyLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w600,
-          fontSize: 11.sp,
+          fontWeight: FontWeight.w400,
+          fontSize: 12.sp,
         ),
         bodyMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w500,
-          fontSize: 10.sp,
+          fontWeight: FontWeight.w400,
+          fontSize: 11.sp,
         ),
         bodySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w500,
-          fontSize: 9.sp,
+          fontWeight: FontWeight.w400,
+          fontSize: 10.sp,
         ),
 
         // LABEL
@@ -155,13 +155,13 @@ class ThemeDataHelper {
         labelMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.w300,
           fontSize: 7.sp,
         ),
         labelSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.w300,
           fontSize: 6.sp,
         ),
       ),
