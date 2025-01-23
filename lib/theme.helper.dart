@@ -149,20 +149,20 @@ class ThemeDataHelper {
         labelLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w500,
-          fontSize: 8.sp,
+          fontWeight: FontWeight.w600,
+          fontSize: 11.sp,
         ),
         labelMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 7.sp,
+          fontWeight: FontWeight.w400,
+          fontSize: 10.sp,
         ),
         labelSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w300,
-          fontSize: 6.sp,
+          fontSize: 9.sp,
         ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
