@@ -121,7 +121,7 @@ class ThemeDataHelper {
         titleSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
           fontSize: 12.sp,
         ),
 
@@ -179,12 +179,15 @@ class ThemeDataHelper {
           color: iconColor,
           size: 18.sp,
         ),
-        actionsIconTheme: IconThemeData(color: iconColor),
+        actionsIconTheme: IconThemeData(
+          color: iconColor,
+          size: 18.sp,
+        ),
         titleTextStyle: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.bold,
-          fontSize: (iconSize ?? 16).sp,
+          fontWeight: FontWeight.w600,
+          fontSize: 16.sp,
         ),
       ),
     );
