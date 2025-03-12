@@ -1,4 +1,4 @@
-const Map<String, String> uiThemeAr = {
+const Map<String, String> themeLocalizationAr = {
   "THEME.System":"النظام",
   "THEME.Light":"فاتح",
   "THEME.Dark":"داكن",

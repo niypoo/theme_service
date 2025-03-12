@@ -1,4 +1,4 @@
-const Map<String, String> uiThemeEn = {
+const Map<String, String> themeLocalizationEn = {
   "THEME.System":"System",
   "THEME.Light":"Light",
   "THEME.Dark":"Dark",
