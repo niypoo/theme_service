@@ -15,7 +15,7 @@ class _ThemeSettingCardState extends State<ThemeSettingCard> {
   @override
   Widget build(BuildContext context) {
     return FlySettingCard(
-      title: 'Theme'.tr,
+      title: 'THEME.Theme'.tr,
       onTap: () async {
         final String? theme = await ThemesPickerService.show();
 

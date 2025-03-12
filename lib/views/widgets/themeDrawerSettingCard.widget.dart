@@ -16,7 +16,7 @@ class _ThemeDrawerSettingCardState extends State<ThemeDrawerSettingCard> {
   @override
   Widget build(BuildContext context) {
     return FlyDrawerButton(
-      title: 'Theme'.tr,
+      title: 'THEME.Theme'.tr,
       icon: UniconsLine.palette,
       value: ThemeService.to.currentTheme!.tr,
       onTap: () async {

@@ -9,11 +9,11 @@ class ThemesPickerService {
         currentValue: ThemeService.to.currentTheme,
         options: [
           ActionSheetOption(
-            title: 'Light'.tr,
+            title: 'THEME.Light'.tr,
             value: 'Light',
           ),
           ActionSheetOption(
-            title: 'Dark'.tr,
+            title: 'THEME.Dark'.tr,
             value: 'Dark',
           ),
           if (ThemeService.to.extraThemes.isNotEmpty)
@@ -26,11 +26,11 @@ class ThemesPickerService {
                 )
                 .toList(),
           ActionSheetOption(
-            title: 'Auto'.tr,
+            title: 'THEME.System'.tr,
             value: 'Auto',
           ),
         ],
-        title: 'Theme'.tr,
-        subTitle: 'Change the theme of app to fit your taste.'.tr,
+        title: 'THEME.Theme'.tr,
+        subTitle: 'THEME.Change the theme of app to fit your taste.'.tr,
       ) as String?;
 }
