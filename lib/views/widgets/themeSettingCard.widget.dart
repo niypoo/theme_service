@@ -28,7 +28,7 @@ class _ThemeSettingCardState extends State<ThemeSettingCard> {
         setState(() {});
       },
       trailing: Text(
-        ThemeService.to.currentTheme!.tr,
+        "THEME.${ThemeService.to.currentTheme}".tr,
         style: Get.textTheme.bodySmall,
       ),
     );

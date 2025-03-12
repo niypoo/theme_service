@@ -18,7 +18,7 @@ class _ThemeDrawerSettingCardState extends State<ThemeDrawerSettingCard> {
     return FlyDrawerButton(
       title: 'THEME.Theme'.tr,
       icon: UniconsLine.palette,
-      value: ThemeService.to.currentTheme!.tr,
+      value: "THEME.${ThemeService.to.currentTheme}".tr,
       onTap: () async {
         final String? theme = await ThemesPickerService.show();
 
