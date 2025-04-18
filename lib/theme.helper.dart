@@ -52,7 +52,7 @@ class ThemeDataHelper {
       cupertinoOverrideTheme: CupertinoThemeData(
         textTheme: CupertinoTextThemeData(
           dateTimePickerTextStyle: TextStyle(
-            fontSize: 18.sp,
+            fontSize: 13.sp,
             fontFamily: fontName,
             color: fontColor,
           ),
