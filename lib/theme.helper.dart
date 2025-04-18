@@ -186,8 +186,11 @@ class ThemeDataHelper {
         titleTextStyle: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w600,
-          fontSize: 16.sp,
+          fontWeight: FontWeight.w900,
+          fontSize: 18.sp,
+          fontFeatures: const <FontFeature>[
+            FontFeature.enable('smcp'),
+          ],
         ),
       ),
     );
