@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:patata_responsive/patata_responsive.dart';
 
 class ThemeDataHelper {
   static ThemeData create(
@@ -38,27 +37,27 @@ class ThemeDataHelper {
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           textStyle: WidgetStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: (12.sp)),
+            TextStyle(color: primaryColor, ),
           ),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
           textStyle: WidgetStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: (12.sp)),
+            TextStyle(color: primaryColor, ),
           ),
         ),
       ),
       cupertinoOverrideTheme: CupertinoThemeData(
         textTheme: CupertinoTextThemeData(
           dateTimePickerTextStyle: TextStyle(
-            fontSize: 13.sp,
+        
             fontFamily: fontName,
             color: fontColor,
           ),
         ),
       ),
-      iconTheme: IconThemeData(color: iconColor, size: (iconSize ?? 16).sp),
+      iconTheme: IconThemeData(color: iconColor,),
       // textTheme: Get.textTheme.apply(
       //   fontFamily: fontName,
       //   bodyColor: fontColor,
@@ -69,100 +68,73 @@ class ThemeDataHelper {
         displayLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w200,
-          fontSize: 42.sp,
+ 
         ),
         displayMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w100,
-          fontSize: 36.sp,
+     
         ),
         displaySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w100,
-          fontSize: 33.sp,
+    
         ),
 
         // HEADLINE
         headlineLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w800,
-          fontSize: 24.sp,
         ),
         headlineMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 20.sp,
         ),
         headlineSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 17.sp,
         ),
 
         // TITLE
         titleLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 16.sp,
         ),
         titleMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w600,
-          fontSize: 14.sp,
         ),
         titleSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w600,
-          fontSize: 12.sp,
         ),
 
         // BODY
         bodyLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 12.sp,
         ),
         bodyMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 11.sp,
         ),
         bodySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 10.sp,
         ),
 
         // LABEL
         labelLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w600,
-          fontSize: 11.sp,
         ),
         labelMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 10.sp,
         ),
         labelSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 9.sp,
         ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -177,17 +149,13 @@ class ThemeDataHelper {
         color: appBarColor,
         iconTheme: IconThemeData(
           color: iconColor,
-          size: 18.sp,
         ),
         actionsIconTheme: IconThemeData(
           color: iconColor,
-          size: 18.sp,
         ),
         titleTextStyle: TextStyle(
           fontFamily: fontName,
           color: primaryColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 17.sp,
           // fontFeatures: const <FontFeature>[
           //   FontFeature.enable('smcp'),
           // ],

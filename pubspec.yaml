@@ -10,7 +10,6 @@ dependencies:
     sdk: flutter
 
   get: ^4.6.6
-  patata_responsive: ^0.0.1
   
   local_storage_service:
     git: 
