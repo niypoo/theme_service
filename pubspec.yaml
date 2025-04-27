@@ -10,8 +10,10 @@ dependencies:
     sdk: flutter
 
   get: ^4.6.6
-  patata_responsive: ^0.0.1
   
+  fly_ui:
+    git: 
+      url: git@github.com:niypoo/fly_ui.git
   local_storage_service:
     git: 
       url: git@github.com:niypoo/local_storage_service.git

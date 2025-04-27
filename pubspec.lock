@@ -291,7 +291,7 @@ packages:
     source: hosted
     version: "3.2.0"
   fly_ui:
-    dependency: transitive
+    dependency: "direct main"
     description:
       path: "."
       ref: HEAD
@@ -457,7 +457,7 @@ packages:
     source: hosted
     version: "1.0.2+3"
   patata_responsive:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: patata_responsive
       sha256: "56218861326b4df3e6cc44a346aa3d5b36f2c62c0c64bbccc76099dba71d51c1"
