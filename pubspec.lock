@@ -291,7 +291,7 @@ packages:
     source: hosted
     version: "3.2.0"
   fly_ui:
-    dependency: "direct main"
+    dependency: transitive
     description:
       path: "."
       ref: HEAD

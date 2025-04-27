@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fly_ui/extensions/responsive.extension.dart';
 
 class ThemeDataHelper {
   static ThemeData create(
@@ -19,7 +18,6 @@ class ThemeDataHelper {
     String? fontName,
     double? iconSize,
     Brightness? brightness,
-    double fontSizeRatio = 1,
   }) {
     return theme.copyWith(
       brightness: brightness,
@@ -39,27 +37,26 @@ class ThemeDataHelper {
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           textStyle: WidgetStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: (12 * fontSizeRatio)),
+            TextStyle(color: primaryColor),
           ),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
           textStyle: WidgetStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: (12 * fontSizeRatio)),
+            TextStyle(color: primaryColor),
           ),
         ),
       ),
       cupertinoOverrideTheme: CupertinoThemeData(
         textTheme: CupertinoTextThemeData(
           dateTimePickerTextStyle: TextStyle(
-            fontSize: 13 * fontSizeRatio,
             fontFamily: fontName,
             color: fontColor,
           ),
         ),
       ),
-      iconTheme: IconThemeData(color: iconColor, size: (iconSize ?? 16) * fontSizeRatio),
+      iconTheme: IconThemeData(color: iconColor, size: (iconSize ?? 16)),
       // textTheme: Get.textTheme.apply(
       //   fontFamily: fontName,
       //   bodyColor: fontColor,
@@ -70,100 +67,70 @@ class ThemeDataHelper {
         displayLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w200,
-          fontSize: 42 * fontSizeRatio,
         ),
         displayMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w100,
-          fontSize: 36 * fontSizeRatio,
         ),
         displaySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w100,
-          fontSize: 33 * fontSizeRatio,
         ),
 
         // HEADLINE
         headlineLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w800,
-          fontSize: 24 * fontSizeRatio,
         ),
         headlineMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 20 * fontSizeRatio,
         ),
         headlineSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 17 * fontSizeRatio,
         ),
 
         // TITLE
         titleLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 16 * fontSizeRatio,
         ),
         titleMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w600,
-          fontSize: 14 * fontSizeRatio,
         ),
         titleSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w600,
-          fontSize: 12 * fontSizeRatio,
         ),
 
         // BODY
         bodyLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 12 * fontSizeRatio,
         ),
         bodyMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 11 * fontSizeRatio,
         ),
         bodySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 10 * fontSizeRatio,
         ),
 
         // LABEL
         labelLarge: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w600,
-          fontSize: 11 * fontSizeRatio,
         ),
         labelMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w400,
-          fontSize: 10 * fontSizeRatio,
         ),
         labelSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
-          fontWeight: FontWeight.w300,
-          fontSize: 9 * fontSizeRatio,
         ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -178,17 +145,13 @@ class ThemeDataHelper {
         color: appBarColor,
         iconTheme: IconThemeData(
           color: iconColor,
-          size: 18 * fontSizeRatio,
         ),
         actionsIconTheme: IconThemeData(
           color: iconColor,
-          size: 18 * fontSizeRatio,
         ),
         titleTextStyle: TextStyle(
           fontFamily: fontName,
           color: primaryColor,
-          fontWeight: FontWeight.w700,
-          fontSize: 17 * fontSizeRatio,
           // fontFeatures: const <FontFeature>[
           //   FontFeature.enable('smcp'),
           // ],
