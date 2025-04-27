@@ -19,6 +19,7 @@ class ThemeDataHelper {
     String? fontName,
     double? iconSize,
     Brightness? brightness,
+    double fontSizeRatio = 1,
   }) {
     return theme.copyWith(
       brightness: brightness,
@@ -38,27 +39,27 @@ class ThemeDataHelper {
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           textStyle: WidgetStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: (12.sp)),
+            TextStyle(color: primaryColor, fontSize: (12 * fontSizeRatio)),
           ),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
           textStyle: WidgetStateProperty.all(
-            TextStyle(color: primaryColor, fontSize: (12.sp)),
+            TextStyle(color: primaryColor, fontSize: (12 * fontSizeRatio)),
           ),
         ),
       ),
       cupertinoOverrideTheme: CupertinoThemeData(
         textTheme: CupertinoTextThemeData(
           dateTimePickerTextStyle: TextStyle(
-            fontSize: 13.sp,
+            fontSize: 13 * fontSizeRatio,
             fontFamily: fontName,
             color: fontColor,
           ),
         ),
       ),
-      iconTheme: IconThemeData(color: iconColor, size: (iconSize ?? 16).sp),
+      iconTheme: IconThemeData(color: iconColor, size: (iconSize ?? 16) * fontSizeRatio),
       // textTheme: Get.textTheme.apply(
       //   fontFamily: fontName,
       //   bodyColor: fontColor,
@@ -70,19 +71,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w200,
-          fontSize: 42.sp,
+          fontSize: 42 * fontSizeRatio,
         ),
         displayMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w100,
-          fontSize: 36.sp,
+          fontSize: 36 * fontSizeRatio,
         ),
         displaySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w100,
-          fontSize: 33.sp,
+          fontSize: 33 * fontSizeRatio,
         ),
 
         // HEADLINE
@@ -90,19 +91,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w800,
-          fontSize: 24.sp,
+          fontSize: 24 * fontSizeRatio,
         ),
         headlineMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w700,
-          fontSize: 20.sp,
+          fontSize: 20 * fontSizeRatio,
         ),
         headlineSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w700,
-          fontSize: 17.sp,
+          fontSize: 17 * fontSizeRatio,
         ),
 
         // TITLE
@@ -110,19 +111,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w700,
-          fontSize: 16.sp,
+          fontSize: 16 * fontSizeRatio,
         ),
         titleMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w600,
-          fontSize: 14.sp,
+          fontSize: 14 * fontSizeRatio,
         ),
         titleSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w600,
-          fontSize: 12.sp,
+          fontSize: 12 * fontSizeRatio,
         ),
 
         // BODY
@@ -130,19 +131,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w400,
-          fontSize: 12.sp,
+          fontSize: 12 * fontSizeRatio,
         ),
         bodyMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w400,
-          fontSize: 11.sp,
+          fontSize: 11 * fontSizeRatio,
         ),
         bodySmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w400,
-          fontSize: 10.sp,
+          fontSize: 10 * fontSizeRatio,
         ),
 
         // LABEL
@@ -150,19 +151,19 @@ class ThemeDataHelper {
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w600,
-          fontSize: 11.sp,
+          fontSize: 11 * fontSizeRatio,
         ),
         labelMedium: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w400,
-          fontSize: 10.sp,
+          fontSize: 10 * fontSizeRatio,
         ),
         labelSmall: TextStyle(
           fontFamily: fontName,
           color: fontColor,
           fontWeight: FontWeight.w300,
-          fontSize: 9.sp,
+          fontSize: 9 * fontSizeRatio,
         ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -177,17 +178,17 @@ class ThemeDataHelper {
         color: appBarColor,
         iconTheme: IconThemeData(
           color: iconColor,
-          size: 18.sp,
+          size: 18 * fontSizeRatio,
         ),
         actionsIconTheme: IconThemeData(
           color: iconColor,
-          size: 18.sp,
+          size: 18 * fontSizeRatio,
         ),
         titleTextStyle: TextStyle(
           fontFamily: fontName,
           color: primaryColor,
           fontWeight: FontWeight.w700,
-          fontSize: 17.sp,
+          fontSize: 17 * fontSizeRatio,
           // fontFeatures: const <FontFeature>[
           //   FontFeature.enable('smcp'),
           // ],

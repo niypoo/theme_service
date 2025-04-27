@@ -11,9 +11,6 @@ dependencies:
 
   get: ^4.6.6
   
-  fly_ui:
-    git: 
-      url: git@github.com:niypoo/fly_ui.git
   local_storage_service:
     git: 
       url: git@github.com:niypoo/local_storage_service.git
